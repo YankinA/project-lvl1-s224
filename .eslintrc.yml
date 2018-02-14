@@ -1,12 +1,11 @@
 ---
 
 plugins:
-  - jest
   - flowtype
 
 env:
   node: true
-  jest: true
+  
 
 parser: babel-eslint
 
