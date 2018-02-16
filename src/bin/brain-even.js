@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import { brainEven } from '..';
+import { starGame } from '..';
+import { taskEven } from '../games/brain-even';
+import { questionAnswer } from '../games/brain-even';
 
-brainEven();
+starGame(taskEven, questionAnswer);

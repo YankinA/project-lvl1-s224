@@ -1,11 +1,12 @@
 {
   "name": "project-1-yankin",
-  "version": "1.4.14",
+  "version": "1.4.16",
   "description": "",
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js"
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "files": [
     "dist"
@@ -38,6 +39,7 @@
     "eslint": "^4.17.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "hexlet-pairs": "^1.0.5",
     "readline-sync": "^1.4.8"
   }
 }
