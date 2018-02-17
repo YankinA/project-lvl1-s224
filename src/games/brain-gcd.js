@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { brainEven } from '..';
 import { cons } from 'hexlet-pairs';
 import { random } from '..';
+import { starGame } from '..';
 
 export const taskGcd = 'Find the greatest common divisor of given numbers.';
 
@@ -24,6 +24,8 @@ const gcd = (n, m) => {
 
  return cons(questionEven,correctAnswerEven);
 };
+
+export default () => starGame(taskGcd, questionAnswer);
 
 
  

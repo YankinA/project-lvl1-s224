@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
 import { cons } from 'hexlet-pairs';
 import { random } from '..';
+import { starGame } from '..';
 
-export const taskEven = 'What is the result of the expression?';
+const taskCalc = 'What is the result of the expression?';
 
-export const questionAnswer = () => {
+  const questionAnswer = () => {
   const firstRandomNum = random(100,0);
   const lastRandomNum = random(100,0);
   const arr  = ['+','-','*'];
@@ -22,3 +23,5 @@ switch (sing) {
   }
   return cons(questionEven,correctAnswerEven);
 };
+
+export default () => starGame(taskCalc, questionAnswer);
