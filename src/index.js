@@ -15,15 +15,19 @@ export const starGame = (task,questionAnswer) => {
   console.log(`Hello ${userName} !`);
 
   const iter = (counter) => {
-    const callQuestionAnswer = questionAnswer();
-    const question = car(callQuestionAnswer);
-    if (counter > 3) {
+   if (counter > 3) {
       return console.log(`Congratulations, ${userName}!`);
     }
     
+    const callQuestionAnswer = questionAnswer();
+    const question = car(callQuestionAnswer);
+ 
     console.log(question);
-    const yourAnswer = readlineSync.question('Your answer: ');
+
     const correctAnswer = cdr(callQuestionAnswer);
+    
+    const yourAnswer = readlineSync.question('Your answer: ');
+     
 
     if (correctAnswer == yourAnswer) {
       console.log('Correct!');
