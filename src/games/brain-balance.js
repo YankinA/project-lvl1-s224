@@ -22,8 +22,7 @@ const questionAnswer = () => {
   const questionEven = `${randomNum}`;
   const correctAnswerEven = balanse(randomNum);
 
- return cons(questionEven, correctAnswerEven);
+return cons(questionEven, correctAnswerEven);
 };
 
 export default () => starGame(taskGcd, questionAnswer);
-

@@ -6,26 +6,22 @@ import { starGame } from '..';
 export const taskGcd = 'Find the greatest common divisor of given numbers.';
 
 export const questionAnswer = () => {
-  const firstRandomNum = random(100,1);
-  const lastRandomNum = random(100,1);
+  const firstRandomNum = random(100, 1);
+  const lastRandomNum = random(100, 1);
   const questionEven = `${firstRandomNum} ${lastRandomNum}`;
 
 const gcd = (n, m) => {
-  if(m > 0) { 
-    const k = n % m;
-    return gcd(m, k); 
-  } 
-  else { 
-    return Math.abs(n);  
-  }
+    if (m > 0) {
+      const k = n % m;
+      return gcd(m, k);
 }
- 
- const correctAnswerEven = gcd(firstRandomNum, lastRandomNum); 
+    return Math.abs(n);
+  }
 
- return cons(questionEven,correctAnswerEven);
+
+const correctAnswerEven = gcd(firstRandomNum, lastRandomNum);
+
+  return cons(questionEven, correctAnswerEven);
 };
 
 export default () => starGame(taskGcd, questionAnswer);
-
-
- 
