@@ -7,7 +7,7 @@ export default() => {
 };
 export const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-export const starGame = (task,questionAnswer) => {
+export const starGame = (task, questionAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(task);
 
@@ -15,21 +15,19 @@ export const starGame = (task,questionAnswer) => {
   console.log(`Hello ${userName} !`);
 
   const iter = (counter) => {
-   if (counter > 3) {
+    if (counter > 3) {
       return console.log(`Congratulations, ${userName}!`);
     }
-    
     const callQuestionAnswer = questionAnswer();
     const question = car(callQuestionAnswer);
- 
+
     console.log(question);
 
     const correctAnswer = cdr(callQuestionAnswer);
-    
-    const yourAnswer = readlineSync.question('Your answer: ');
-     
 
-    if (correctAnswer == yourAnswer) {
+    const yourAnswer = readlineSync.question('Your answer: ');
+
+    if (String(correctAnswer) === String(yourAnswer)) {
       console.log('Correct!');
       return iter(counter + 1);
     }

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import { cons } from 'hexlet-pairs';
-import { random } from '..';
-import { starGame } from '..';
+import { random, starGame } from '..';
 
 export const taskEven = 'Answer "yes" if number even otherwise answer "no".';
 const even = num => num % 2 === 0;
